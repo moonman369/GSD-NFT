@@ -4,14 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx hardhat test",
+    "deploy-sepolia": "npx hardhat --network sepolia run scripts/deploy.ts",
+    "deploy-mumbai": "npx hardhat --network mumbai run scripts/deploy.ts",
+    "deploy-fuji": "npx hardhat --network fuji run scripts/deploy.ts",
+    "deploy-goerli": "npx hardhat --network goerli run scripts/deploy.ts",
+    "deploy-bsc-test": "npx hardhat --network bsc run scripts/deploy.ts",
+    "deploy-thirdweb": "npx thirdweb deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@nomicfoundation/hardhat-toolbox": "^4.0.0",
     "@openzeppelin/contracts-upgradeable": "^5.0.1",
+    "@openzeppelin/hardhat-upgrades": "^3.0.3",
+    "ethers": "^6.11.0",
     "hardhat": "^2.19.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
   }
 }
