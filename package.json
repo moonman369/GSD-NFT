@@ -10,6 +10,11 @@
     "deploy-fuji": "npx hardhat --network fuji run scripts/deploy.ts",
     "deploy-goerli": "npx hardhat --network goerli run scripts/deploy.ts",
     "deploy-bsc-test": "npx hardhat --network bsc run scripts/deploy.ts",
+    "upgrade-sepolia": "npx hardhat --network sepolia run scripts/upgrade.ts",
+    "upgrade-mumbai": "npx hardhat --network mumbai run scripts/upgrade.ts",
+    "upgrade-fuji": "npx hardhat --network fuji run scripts/upgrade.ts",
+    "upgrade-goerli": "npx hardhat --network goerli run scripts/upgrade.ts",
+    "upgrade-bsc-test": "npx hardhat --network bsc run scripts/upgrade.ts",
     "deploy-thirdweb": "npx thirdweb deploy"
   },
   "keywords": [],

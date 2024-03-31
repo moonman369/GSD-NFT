@@ -16,7 +16,7 @@ export const deployGSDNFT = async (
   await gsdNft.waitForDeployment();
 
   console.log(
-    `GSD NFT contract has been deployed at address: ${gsdNft.target}`
+    `GSD NFT contract has been deployed at address: ${gsdNft.target} .....`
   );
 
   return gsdNft;
